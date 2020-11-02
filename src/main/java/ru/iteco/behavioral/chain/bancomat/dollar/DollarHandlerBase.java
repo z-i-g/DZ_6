@@ -1,6 +1,5 @@
 package ru.iteco.behavioral.chain.bancomat.dollar;
 
-import ru.iteco.behavioral.chain.bancomat.banknote.Banknote;
 import ru.iteco.behavioral.chain.bancomat.banknote.BanknoteHandler;
 import ru.iteco.behavioral.chain.bancomat.banknote.CurrencyType;
 
@@ -18,12 +17,9 @@ public abstract class DollarHandlerBase extends BanknoteHandler {
     }
 
     @Override
-    public boolean validate(Banknote banknote) {
-        if (banknote.getCurrency().equals(type) && banknote.getValue().equals(getValue())) {
-            return true;
-        }
-        return super.validate(banknote);
+    protected CurrencyType getType() {
+        return type;
     }
 
-    protected abstract String getValue();
+    protected abstract int getValue();
 }

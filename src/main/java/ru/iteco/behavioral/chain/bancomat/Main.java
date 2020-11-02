@@ -12,9 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
         Bancomat bancomat = new Bancomat();
-        Banknote banknote = new Banknote(CurrencyType.USD, 100);
+        Banknote banknote = new Banknote(CurrencyType.USD, 210);
 
-        System.out.println(bancomat.validate(banknote));
+//        System.out.println(bancomat.validate(banknote));
+
+        System.out.println(bancomat.cashe(banknote));
 
     }
 }

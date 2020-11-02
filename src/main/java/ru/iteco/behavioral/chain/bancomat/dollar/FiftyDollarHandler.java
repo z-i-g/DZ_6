@@ -9,14 +9,14 @@ import ru.iteco.behavioral.chain.bancomat.banknote.BanknoteHandler;
  */
 public class FiftyDollarHandler extends DollarHandlerBase {
 
-    protected String value = "50";
+    protected int value= 50;
 
     public FiftyDollarHandler(BanknoteHandler nextHandler) {
         super(nextHandler);
     }
 
     @Override
-    protected String getValue() {
+    protected int getValue() {
         return value;
     }
 }

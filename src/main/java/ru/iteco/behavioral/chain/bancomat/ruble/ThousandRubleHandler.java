@@ -11,7 +11,7 @@ import ru.iteco.behavioral.chain.bancomat.banknote.CurrencyType;
  */
 public class ThousandRubleHandler extends RubleHandlerBase {
 
-    private int value = 10;
+    private int value = 1000;
 
     public ThousandRubleHandler(BanknoteHandler nextHandler) {
         super(nextHandler);
